@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+  // Handler for .ready() called.
+            $(".toggle").on("click", function(){
+
+                if($(".item").hasClass("active")){
+                  $(".item").removeClass("active");
+                }
+                else{
+                  $(".item").addClass("active");
+                }
+            })
+        });
+    </script>
+    <title>TheTechHub</title>
+  </head>
+    <body>
+      <header class="sticky">
+        <nav class="navbar" id="navbar">
+          <ul class="navlinks">
+            <li class="logo"><a href="#"> TheTecHub</a></li>
+            <li class="item"><a href="#">Search</a></li>
+            <li class="item"><a href="#">Shop</a></li>
+            <li class="item"><a href="#">My Hub</a></li>
+            <a href="#"><button type="button" name="button"class="virtual">Virtual Consultation</button></a>
+            <li class="item button"><a href="#">Login</a></li>
+            <li class="item button secondary"><a href="#">Sign Up</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="banner">
+        <div class="container">
+
+          <div class="content1">
+            <h3 class="about-title">About</h3>
+            <p class="about-details">Online shopping platform for your device purchase and delivery</p>
+          </div>
+
+          <!-- <div class="">
+            <hr class="line1">
+          </div> -->
+
+          <div class="content2">
+            <h3 class="trust-defines-us">Trust defines us</h3>
+          </div>
+
+          <div class="scroll-down">
+          </div>
+        </div>
+      </section>
+
+      <section>
+
+        <div class="brands">
+          <h2>Brands</h2>
+          <h3>Select your currency</h3>
+          <hr class="line1">
+          <div class="col">Laptop1</div>
+
+          <div class="col">Laptop2</div>
+
+          <div class="col">Laptop3</div>
+          </div>
+
+          <div class="trends">
+            <h2>Trending</h2>
+              <div class="trending">
+                Trending Laptop1
+              </div>
+              <div class="trending">
+                Trending Laptop2
+              </div>
+              <div class="trending">
+                Trending Laptop3
+              </div>
+          </div>
+
+
+          <div class="scroll-down-gray"></div>
+        </div>
+      </section>
+    </body>
+  </html>
